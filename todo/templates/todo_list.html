@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-do List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>To-do List</h1>
+    <ul>
+        {% for todo in todos %}
+        <li data-id="{{ todo.id }}">
+            <span class="todo-title">{{ todo.title }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
